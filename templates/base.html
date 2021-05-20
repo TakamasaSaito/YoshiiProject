@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+    @import url('https://fonts.googleapis.com/css?family=Sawarabi+Gothic');
+
+    body {
+      font-family: 'Sawarabi Gothic', sans-serif;
+    }
+
+    h1,h2,h3 {
+      font-family: 'Noto Serif JP', sans-serif;
+    }
+
+    h2 {
+      position: relative;
+    }
+
+    /* .display-4 {
+      animation: title-fade-in 2.5s ease 0s 1 normal running forwards;
+    }
+    @keyframes title-fade-in {
+      0% {
+        color: #fff;
+      }
+      50% {
+        color: #FFFFDD;
+      }
+      75% {
+        color: #EEFFFF;
+      }
+      100% {
+        color: #000;
+      }
+    } */
+
+    .typing {
+      display: flex;
+      justify-content: center;
+    }
+
+    .typing h1 {
+      font-size: 1.8em;
+      font-family: "Courier New", Consolas, monospace;
+      letter-spacing: 2px;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 1px solid;
+    }
+
+    .typing .main-title {
+      width: 0;
+      animation:
+        type 1.6s steps(9, end) 1000ms forwards;
+    }
+
+    /* .typing .main-title2 {
+      width: 0;
+      animation:
+        sub_type 1.0s steps(9, end) 1000ms forwards;
+    } */
+
+    @keyframes type {
+      to {
+        width: 190px;
+      }
+    }
+
+    /* @keyframes sub_type {
+      to {
+        width: 100%;
+      }
+    } */
+
+    h2:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+      background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+    }
+
+    .tabi_title {
+      color: #191970;
+    }
+
+    .tabi_info {
+      /*線の種類（二重線）太さ 色*/
+      border-bottom: double 2px #FFC778;
+      color: #800000;
+    }
+    .tabi_info_ele {
+      color: #006400;
+    }
+    .pay{
+      color: #FF6347;
+    }
+    .get{
+      color: #4169E1;
+    }
+    </style>
+    <title>Warikanアプリ</title>
+  </head>
+  <body>
+    {% block header %}
+    {% endblock header %}
+
+    {% block content %}
+    {% endblock content %}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
